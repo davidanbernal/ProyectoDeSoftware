@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+  }
+  .espacio-blanco {
+    height: 30px;
+    background-color: white;
+  }
+  header {
+    background-color: #a9a1a6;
+    color: #3b3b3b;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: bold;
+  }
+  .logo {
+    float: right;
+    margin-top: -40px;
+    margin-right: 20px;
+  }
+  .container {
+    max-width: 600px;
+    background-color: #eeeeee;
+    padding: 20px;
+    margin: 50px auto;
+    border-radius: 8px;
+  }
+  h2 {
+    color: #4c4c4c;
+  }
+  label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+  input[type="text"],
+  input[type="password"],
+  input[type="date"],
+  select {
+    width: 100%;
+    padding: 8px;
+    box-sizing: border-box;
+  }
+  .note {
+    font-size: 12px;
+    color: gray;
+    margin-top: 10px;
+  }
+  .recover {
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 13px;
+    color: #6666cc;
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  .recover:hover {
+    color: #333399;
+  }
+  button {
+    background-color: #f47231;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  footer {
+    text-align: center;
+    margin-top: 50px;
+    background-color: #ccc;
+    padding: 10px;
+    font-size: 14px;
+  }
