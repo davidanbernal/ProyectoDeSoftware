@@ -33,7 +33,7 @@ const pool = mysql.createPool({
     host: process.env.DB_HOST,
     user: process.env.DB_USER,
     password: process.env.DB_PASS,
-    database: 'control_acceso',
+    database: 'u298424173_control_acceso',
     // Configuración de reconexión
     acquireTimeout: 3000, // Tiempo de espera para adquirir una conexión
     connectTimeout: 3000, // Tiempo de espera para conectar
