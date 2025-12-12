@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Control de visitantes - Registro</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body class="layout">
+
+  <div class="espacio-blanco"></div>
+
+  <header>
+    <a href="/" style="text-decoration: none;">
+        <img src="/images/home.png" alt="home" height="28" style="vertical-align: middle; margin-right: 10px;">
+      </a>
+    Control de visitantes
+    <img src="/images/logo.png" alt="logo" height="60" class="logo">
+  </header>
+
+  <!-- main usa la clase container que ya tienes en el CSS -->
+  <main class="container">
+    <h2>Registro de visitantes</h2>
+
+    <form id="formRegistro">
+      <table width="100%" cellspacing="0" cellpadding="5">
+        <!-- Fila de búsqueda -->
+        <tr>
+          <td>
+            <label for="id_visitante">No. de identificación de visitante:</label>
+          </td>
+          <td>
+            <input type="number" id="id_visitante" name="id_visitante" required>
+          </td>
+          <td align="center">
+            <button type="button" id="btnBuscar">Buscar</button>
+          </td>
+        </tr>
+
+        <!-- Separador visual usando fila vacía -->
+        <tr><td colspan="3">&nbsp;</td></tr>
+
+        <!-- Datos del visitante (simulan las barras grises) -->
+        <tr>
+          <td>
+            <label for="autoriza">Autoriza:</label>
+          </td>
+          <td colspan="2">
+            <input type="text" id="autoriza" name="autoriza" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="fecha_ingreso">Fecha de ingreso:</label>
+          </td>
+          <td colspan="2">
+            <input type="text" id="fecha_ingreso" name="fecha_ingreso" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="oficina">Oficina a la que se dirige:</label>
+          </td>
+          <td colspan="2">
+            <input type="text" id="oficina" name="oficina" readonly>
+          </td>
+        </tr>
+
+        <tr>
+          <td>
+            <label for="nombres">Nombres y Apellidos:</label>
+          </td>
+          <td colspan="2">
+            <input type="text" id="nombres" name="nombres" >
+          </td>
+        </tr>
+
+        <tr>
+          <td colspan="3">
+            <div class="note">
+              * Todos los campos son obligatorios
+            </div>
+          </td>
+        </tr>
+
+        <!-- Botón Registrar al final, alineado a la derecha -->
+        <tr>
+          <td colspan="3" align="right">
+            <button type="submit" id="btnRegistrar" disabled>Registrar</button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </main>
+
+  <footer>
+    dabs 2025 - info@dabs.com
+  </footer>
+  <script src="/js/registro.js"></script>
+</body>
+</html>

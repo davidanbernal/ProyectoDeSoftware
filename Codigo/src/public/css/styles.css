@@ -57,7 +57,7 @@ body {
   .recover:hover {
     color: #333399;
   }
-  button {
+  button, .btn-primary {
     background-color: #f47231;
     color: white;
     padding: 10px 20px;
@@ -66,7 +66,16 @@ body {
     margin-top: 20px;
     cursor: pointer;
     border-radius: 4px;
+    text-decoration: none;
   }
+  button:hover, .btn-primary:hover {
+    background-color: #7d8185;
+}
+button:disabled {
+  background-color: #7d8185 ;
+  cursor: not-allowed;
+}
+
   footer {
     text-align: center;
     margin-top: 50px;
@@ -74,3 +83,12 @@ body {
     padding: 10px;
     font-size: 14px;
   }
+  .layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main.container {
+    flex: 1;
+}
