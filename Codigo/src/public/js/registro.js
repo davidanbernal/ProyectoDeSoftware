@@ -41,7 +41,7 @@ document.addEventListener("DOMContentLoaded", () => {
     limpiarCampos();
 
     try {
-      // Fecha de hoy en formato YYYY-MM-DD (local, sin zona horaria)
+      // Fecha de hoy en formato YYYY-MM-DD, sin zona horaria
       const hoy = new Date();
       const fechaHoy =
         hoy.getFullYear() + "-" +
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", () => {
       inputNombres.disabled = false;
       inputNombres.focus();
 
-      // Registrar queda habilitado solo cuando nombres tenga texto (listener input)
+      // Registrar queda habilitado solo cuando nombres tenga texto 
     } catch (e) {
       console.error(e);
       alert("Error al comunicarse con el servidor. Intente nuevamente.");
